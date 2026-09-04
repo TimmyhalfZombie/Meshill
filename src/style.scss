@@ -99,13 +99,13 @@ body {
 
 .flowers {
   position: relative;
-  transform: scale(1.1);
+  transform: scale(0.95);
   transform-origin: bottom center;
 }
 
 .flower {
   position: absolute;
-  bottom: 10vmin;
+  bottom: 7vmin;
   transform-origin: bottom center;
   z-index: 10;
 
@@ -116,7 +116,7 @@ body {
     .flower__line {
       $delay: 0.3s;
 
-      height: 70vmin;
+      height: 56vmin;
       animation-delay: $delay;
 
       &__leaf {
@@ -152,7 +152,7 @@ body {
     transform: rotate(20deg);
     animation: moving-flower-2 calc(5.8s * var(--wind-mult, 1)) var(--sway-ease) infinite;
     .flower__line {
-      height: 60vmin;
+      height: 48vmin;
       animation-delay: 0.6s;
 
       &__leaf {
@@ -398,7 +398,7 @@ body {
   }
 
   &__line {
-    height: 55vmin;
+    height: 44vmin;
     width: 1.5vmin;
     background-image: linear-gradient(
         to left,
