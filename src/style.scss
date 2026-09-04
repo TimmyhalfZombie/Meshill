@@ -18,15 +18,21 @@
   font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
 }
 
-body {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  min-height: 100vh;
-  background-color: var(--dark-color);
+html,
+body,
+#root {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
   overflow: hidden;
-  perspective: 1000px;
-  padding: 50px 0px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(ellipse at 50% 100%, #290d1f 0%, #150610 50%, #080106 100%);
+  overflow: hidden;
   color: #fff;
   user-select: none;
 }

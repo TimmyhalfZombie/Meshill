@@ -19,9 +19,10 @@ export default function App() {
     <div
       className={`app-viewport ${!loaded ? 'not-loaded' : ''}`}
       style={{
-        width: '100vw',
-        height: '100vh',
-        position: 'relative',
+        position: 'fixed',
+        inset: 0,
+        width: '100%',
+        height: '100%',
         overflow: 'hidden',
         background: 'radial-gradient(ellipse at 50% 100%, #290d1f 0%, #150610 50%, #080106 100%)',
       }}
